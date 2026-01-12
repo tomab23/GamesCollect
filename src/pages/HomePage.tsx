@@ -18,7 +18,9 @@ const HomePage = () => {
       />
       {/* <Button className={"p-4 text-md"}>Ajouter un jeu</Button>
       </Header> */}
-      <Button variant={"outline"} className={"p-4"}>Voir tout mes jeux</Button>
+      <Button variant={"outline"} className={"p-4"}>
+        Voir tout mes jeux
+      </Button>
       <p>HomePage</p>
       <p>LANGUE : {t("TEST")} </p>
       <br />
@@ -27,17 +29,17 @@ const HomePage = () => {
       <br />
       <div>
         <p>Test card</p> <br />
-
         <div>
           <p>Test 1</p>
-          <div>
+          <div className="flex gap-4">
             <CardGameUn />
             <CardGameUn />
             <CardGameUn />
           </div>
-          <br /><br />
+          <br />
+          <br />
           <p>Test 2</p>
-          <div>
+          <div className="flex gap-3 flex-wrap">
             <CardGamesDeux />
             <CardGamesDeux />
             <CardGamesDeux />
