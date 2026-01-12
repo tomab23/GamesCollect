@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const NavIcons = () => {
 
   return (
-    <div className="flex items-center gap-3 max-sm:gap-1">
+    <div className="flex items-center gap-2 max-sm:gap-1">
       {/* HOME */}
       <NavLink
         to="/home"
@@ -31,7 +31,7 @@ const NavIcons = () => {
         }
       >
         <Gamepad2 size={20} />
-        <p className="max-md:hidden">Game</p>
+        <p className="max-md:hidden">Games</p>
       </NavLink>
       {/* SEARCH */}
       <NavLink
@@ -45,7 +45,7 @@ const NavIcons = () => {
         }
       >
         <Search size={20} />
-        <p className="max-md:hidden">Game</p>
+        <p className="max-md:hidden">Search</p>
       </NavLink>
       {/* PROFILE */}
       <NavLink
