@@ -11,7 +11,7 @@ const NavIcons = () => {
         className={({ isActive }) =>
           `font-semibold flex items-center gap-2 max-sm:gap-1 px-3 py-2 rounded-md transition-colors ${
             isActive
-              ? "bg-primary text-white hover:bg-primary/90"
+              ? "bg-primary text-primary-foreground hover:bg-primary/90"
               : "hover:bg-accent"
           }`
         }
@@ -25,7 +25,7 @@ const NavIcons = () => {
         className={({ isActive }) =>
           `font-semibold flex items-center gap-2 max-sm:gap-1 px-3 py-2 rounded-md transition-colors ${
             isActive
-              ? "bg-primary text-white hover:bg-primary/90"
+              ? "bg-primary text-primary-foreground hover:bg-primary/90"
               : "hover:bg-accent"
           }`
         }
@@ -39,7 +39,7 @@ const NavIcons = () => {
         className={({ isActive }) =>
           `font-semibold flex items-center gap-2 max-sm:gap-1 px-3 py-2 rounded-md transition-colors ${
             isActive
-              ? "bg-primary text-white hover:bg-primary/90"
+              ? "bg-primary text-primary-foreground hover:bg-primary/90"
               : "hover:bg-accent"
           }`
         }
@@ -53,7 +53,7 @@ const NavIcons = () => {
         className={({ isActive }) =>
           `font-semibold flex items-center gap-2 max-sm:gap-1 px-3 py-2 rounded-md transition-colors ${
             isActive
-              ? "bg-primary text-white hover:bg-primary/90"
+              ? "bg-primary text-primary-foreground hover:bg-primary/90"
               : "hover:bg-accent"
           }`
         }
