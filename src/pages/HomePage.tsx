@@ -18,7 +18,7 @@ const HomePage = () => {
       />
       {/* <Button className={"p-4 text-md"}>Ajouter un jeu</Button>
       </Header> */}
-      <Button className={"p-4"}>Voir tout mes jeux</Button>
+      <Button variant={"outline"} className={"p-4"}>Voir tout mes jeux</Button>
       <p>HomePage</p>
       <p>LANGUE : {t("TEST")} </p>
       <br />
