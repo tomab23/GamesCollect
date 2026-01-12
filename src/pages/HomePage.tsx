@@ -2,6 +2,7 @@ import CardGamesDeux from "@/components/cards/CardGamesDeux";
 import CardGameUn from "@/components/cards/CardGameUn";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
+import { GamesMockTest } from "@/helpers/GameMockTest";
 import { Plus } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -28,21 +29,21 @@ const HomePage = () => {
       <br />
       <br />
       <div>
-        <p>Test card</p> <br />
+        <p>Test card - LIMITER LA LONGUEUR DUNE CARTE ET DU TITRE</p> <br />
         <div>
           <p>Test 1</p>
-          <div className="flex gap-4">
-            <CardGameUn />
-            <CardGameUn />
-            <CardGameUn />
+          <div className="flex gap-4 flex-wrap">
+            {GamesMockTest.map((game) => (
+              <CardGameUn key={game.id} game={game} />
+            ))}
           </div>
           <br />
           <br />
           <p>Test 2</p>
           <div className="flex gap-3 flex-wrap">
-            <CardGamesDeux />
-            <CardGamesDeux />
-            <CardGamesDeux />
+            {GamesMockTest.map((game) => (
+              <CardGamesDeux key={game.id} game={game} />
+            ))}
           </div>
         </div>
       </div>
