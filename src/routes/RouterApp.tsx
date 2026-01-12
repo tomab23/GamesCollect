@@ -1,5 +1,5 @@
 import LayoutWithNavbar from "@/components/layout/LayoutWithNavbar";
-import AuthPage from "@/pages/AuthPage";
+import AuthPage from "@/pages/auth/AuthPage";
 import GamesPage from "@/pages/GamesPage";
 import HomePage from "@/pages/HomePage";
 import ProfilePage from "@/pages/ProfilePage";
