@@ -1,6 +1,6 @@
 const GamesPage = () => {
   return (
-    <div>GamesPage</div>
+    <div className="contenu">GamesPage</div>
   )
 }
 
