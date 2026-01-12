@@ -1,5 +1,6 @@
 import { Gamepad2 } from "lucide-react"
 import NavIcons from "../NavIcons"
+import { ModeToggle } from "../mode-toggle"
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2 justify-center">
             <Gamepad2 size={30} />
             <h1 className="text-xl font-semibold">GamesCollect</h1>
-             {/* <ModeToggle /> */}
+             <ModeToggle />
           </div>
 
           {/* Navigation Links */}
