@@ -1,3 +1,5 @@
+import CardGamesDeux from "@/components/cards/CardGamesDeux";
+import CardGameUn from "@/components/cards/CardGameUn";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
@@ -16,9 +18,28 @@ const HomePage = () => {
       </Header> */}
       <Button className={"p-4"}>Voir tout mes jeux</Button>
       <p>HomePage</p>
-<br /><br /><br /><br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div>
-        <p>Test card</p>
+        <p>Test card</p> <br />
+
+        <div>
+          <p>Test 1</p>
+          <div>
+            <CardGameUn />
+            <CardGameUn />
+            <CardGameUn />
+          </div>
+          <br /><br />
+          <p>Test 2</p>
+          <div>
+            <CardGamesDeux />
+            <CardGamesDeux />
+            <CardGamesDeux />
+          </div>
+        </div>
       </div>
     </div>
   );
