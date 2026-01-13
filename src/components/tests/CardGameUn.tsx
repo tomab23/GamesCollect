@@ -1,17 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
 import type GameTest from "@/models/GameTest";
 import { Check, ChevronRight, Disc } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 type Props = {
   game: GameTest;
 };
 
 const CardGameUn = ({ game }: Props) => {
-  const navigate = useNavigate();
   return (
     <Link to={"/game"} className="block">
-      <Card className="cursor-pointer hover:shadow-primary/20  max-md:w-full w-[35rem] hover:outline-1">
+      <Card className="cursor-pointer hover:shadow-primary/20  max-md:w-full w-[35rem] hover:outline-1 ">
         <CardContent className="flex justify-between items-center">
           <div className="flex gap-4 items-center">
             <h1 className="font-semibold truncate max-w-56" title={game.title}>

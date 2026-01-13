@@ -2,9 +2,11 @@ import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   return (
     <div className="contenu">
       <Header
@@ -14,11 +16,8 @@ const HomePage = () => {
         nameButton={"Add new game"}
         icon={<Plus />}
       />
-      {/* <Button className={"p-4 text-md"}>Ajouter un jeu</Button>
-      </Header> */}
-      <Button variant={"outline"} className={"p-4"}>
-        Voir tout mes jeux
-      </Button>
+      <Button variant={"outline"} className={"p-4"} onClick={() => navigate("/games")}>Voir tout mes jeux</Button>
+ <br /><br />
       <p>HomePage</p>
       <p>LANGUE : {t("TEST")} </p><br /><br /><br /><br />
 
