@@ -1,5 +1,5 @@
-import CardGamesDeux from "@/components/cards/CardGamesDeux";
-import CardGameUn from "@/components/cards/CardGameUn";
+import CardGamesDeux from "@/components/tests/CardGamesDeux";
+import CardGameUn from "@/components/tests/CardGameUn";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { GamesMockTest } from "@/helpers/GameMockTest";
