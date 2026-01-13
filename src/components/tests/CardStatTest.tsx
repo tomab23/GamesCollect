@@ -1,7 +1,10 @@
+import { Card } from "../ui/card"
 
 const CardStatTest = () => {
   return (
-    <div>CardStatTest</div>
+    <Card>
+      stat
+    </Card>
   )
 }
 

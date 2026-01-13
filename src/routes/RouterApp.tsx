@@ -4,6 +4,7 @@ import GamesPage from "@/pages/GamesPage";
 import HomePage from "@/pages/HomePage";
 import ProfilePage from "@/pages/ProfilePage";
 import SearchPage from "@/pages/SearchPage";
+import TestPage from "@/pages/TestPage";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 const RouterApp = () => {
@@ -22,6 +23,7 @@ const RouterApp = () => {
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/games" element={<GamesPage />} />
         <Route path="/search" element={<SearchPage />} />
+        <Route path="/test" element={<TestPage />} />
         {/* <Route path="/home" element={<PrivateRoute><HomePage /></PrivateRoute>} />
         <Route path="/profile" element={<PrivateRoute><ProfilePage /></PrivateRoute>} /> */}
       </Route>
