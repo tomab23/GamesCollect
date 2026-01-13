@@ -14,7 +14,7 @@ const Header = ({ isButton, title, nameButton, page, icon }: Props) => {
   return (
     <div className="p-4 flex justify-between items-center">
       <p className="text-4xl font-semibold">{title}</p>
-      {isButton && <Button className={"p-4 text-md"} onClick={() => navigate(page)}>{icon} {nameButton}</Button>}
+      {isButton && <Button className={"p-4 text-md hover:bg-primary/95"} onClick={() => navigate(page)}>{icon} {nameButton}</Button>}
     </div>
   );
 };
