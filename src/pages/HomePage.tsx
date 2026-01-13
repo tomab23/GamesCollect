@@ -1,12 +1,12 @@
-import CardGamesDeux from "@/components/cards/CardGamesDeux";
-import CardGameUn from "@/components/cards/CardGameUn";
 import Header from "@/components/layout/Header";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   return (
     <div className="contenu">
       <Header
@@ -14,36 +14,19 @@ const HomePage = () => {
         isButton={true}
         page={"/gameForm"}
         nameButton={"Add new game"}
-        children={<Plus />}
+        icon={<Plus />}
       />
-      {/* <Button className={"p-4 text-md"}>Ajouter un jeu</Button>
-      </Header> */}
-      <Button variant={"outline"} className={"p-4"}>Voir tout mes jeux</Button>
+      <Button variant={"outline"} className={"p-4"} onClick={() => navigate("/games")}>Voir tout mes jeux</Button>
+ <br /><br />
       <p>HomePage</p>
-      <p>LANGUE : {t("TEST")} </p>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div>
-        <p>Test card</p> <br />
+      <p>LANGUE : {t("TEST")} </p><br /><br /><br /><br />
 
-        <div>
-          <p>Test 1</p>
-          <div>
-            <CardGameUn />
-            <CardGameUn />
-            <CardGameUn />
-          </div>
-          <br /><br />
-          <p>Test 2</p>
-          <div>
-            <CardGamesDeux />
-            <CardGamesDeux />
-            <CardGamesDeux />
-          </div>
-        </div>
-      </div>
+      <p>STATS GLOBALE</p><br /><br />
+      <p>STATS PLATFORM / PC - CONSOLE </p><br /><br />
+      <p>VOIR PLUS ? page stats avec graph ?</p><br /><br /><br /><br />
+
+      <p>LES DERNIERS JEUX AJOUTER</p>
+
     </div>
   );
 };

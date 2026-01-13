@@ -13,7 +13,7 @@ const ProfilePage = () => {
         page={"/settings"}
         nameButton={"Settings"}
         title={"My Profile"}
-        children={<Settings />}
+        icon={<Settings />}
       />
 
       <Button variant={"destructive"} className={"text-xl p-4 font-semibold"} onClick={() => navigate("/")}>
@@ -21,6 +21,10 @@ const ProfilePage = () => {
       </Button>
       <p>ProfilePage</p>
       <ModeToggle />
+      <br /><br /><br />
+      <p>Info user</p><br /><br />
+      <p>Stats ?</p><br /><br /><br />
+      <p>LOGOUT ?</p>
     </div>
   );
 };

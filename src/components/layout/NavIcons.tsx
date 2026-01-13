@@ -1,10 +1,24 @@
-import { Gamepad2, Home, Search, User2 } from "lucide-react";
+import { Bug, Gamepad2, Home, Search, User2 } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 const NavIcons = () => {
 
   return (
     <div className="flex items-center gap-2 max-sm:gap-1">
+      {/* TEST */}
+            <NavLink
+        to="/test"
+        className={({ isActive }) =>
+          `font-semibold flex items-center gap-2 max-sm:gap-1 px-3 py-2 rounded-md transition-colors ${
+            isActive
+              ? "bg-primary text-primary-foreground hover:bg-primary/90"
+              : "hover:bg-accent"
+          }`
+        }
+      >
+        <Bug size={20} />
+        <p className="max-md:hidden">Test</p>
+      </NavLink>
       {/* HOME */}
       <NavLink
         to="/home"
