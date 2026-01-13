@@ -29,7 +29,7 @@ const HomePage = () => {
       <br />
       <br />
       <div>
-        <p>Test card - LIMITER LA LONGUEUR DUNE CARTE ET DU TITRE</p> <br />
+        <p>Test card - LIMITER LA LONGUEUR DUNE CARTE ET DU TITRE | GRID POUR CARD ??</p> <br />
         <div>
           <p>Test 1</p>
           <div className="flex gap-4 flex-wrap">

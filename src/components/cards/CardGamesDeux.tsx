@@ -1,11 +1,6 @@
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
 import type GameTest from "@/models/GameTest";
 import { Check, ChevronRight, Disc } from "lucide-react";
@@ -16,11 +11,11 @@ type Props = {
 
 const CardGamesDeux = ({ game } : Props) => {
   return (
-    <Card className="hover:scale-105 cursor-pointer hover:shadow-primary/20">
+    <Card className="hover:outline-1 cursor-pointer hover:shadow-primary/20 max-md:w-40 w-48">
       <CardContent>
-        <h1 className="font-semibold">{game.title}</h1>
+        <h1 className="font-semibold truncate max-w-min" title={game.title}>{game.title}</h1>
         <p className="text-muted-foreground">{game.platform}</p>
-        <div className="flex justify-between">
+        <div className="flex justify-between mt-2">
           <div className="flex">
             <Check className="text-primary" />
             <Disc className={`${!game.disc && "text-muted"}`} />

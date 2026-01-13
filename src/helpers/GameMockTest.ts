@@ -3,7 +3,7 @@ import type GameTest from "@/models/GameTest";
 export const GamesMockTest: GameTest[] = [
   {
     id: 1,
-    title: "The outer world 2",
+    title: "The outer world 2 super jeu de fou furieux hjfsjdhq qsjdqdjqkld qjsdkqsdjl",
     isFavor: false,
     note: "",
     isFinish: true,
