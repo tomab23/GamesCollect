@@ -10,7 +10,7 @@ const SearchPage = () => {
   return (
     <div className="contenu">
       <Header
-        children={undefined}
+        icon={undefined}
         isButton={false}
         page={""}
         nameButton={""}

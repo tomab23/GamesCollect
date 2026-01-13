@@ -1,12 +1,22 @@
-import Header from "@/components/layout/Header"
+import Header from "@/components/layout/Header";
+import { Plus } from "lucide-react";
 
 const GamesPage = () => {
   return (
     <div className="contenu">
-      <Header children={undefined} isButton={false} page={""} nameButton={""} title={"My Games"} />
-      <p>GamesPage</p>
+      <Header
+        isButton={true}
+        page={"/gameForm"}
+        nameButton={"Add new game"}
+        icon={<Plus />}
+        title={"My Games"}
+      />
+      <p>FILTER</p><br /><br />
+      
+      <p>Nombre de resultat</p>
+      <p>RESULTAT</p>
     </div>
-  )
-}
+  );
+};
 
-export default GamesPage
+export default GamesPage;

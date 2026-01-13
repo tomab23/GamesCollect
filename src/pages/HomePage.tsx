@@ -12,7 +12,7 @@ const HomePage = () => {
         isButton={true}
         page={"/gameForm"}
         nameButton={"Add new game"}
-        children={<Plus />}
+        icon={<Plus />}
       />
       {/* <Button className={"p-4 text-md"}>Ajouter un jeu</Button>
       </Header> */}
