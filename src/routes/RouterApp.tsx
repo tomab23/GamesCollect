@@ -1,6 +1,7 @@
 import LayoutWithNavbar from "@/components/layout/LayoutWithNavbar";
 import AuthPage from "@/pages/auth/AuthPage";
-import GamesPage from "@/pages/GamesPage";
+import GamePage from "@/pages/GamePage";
+import GamesListPage from "@/pages/GamesListPage";
 import HomePage from "@/pages/HomePage";
 import ProfilePage from "@/pages/ProfilePage";
 import SearchPage from "@/pages/SearchPage";
@@ -22,10 +23,11 @@ const RouterApp = () => {
       <Route element={<LayoutWithNavbar />}>
         <Route path="/home" element={<HomePage />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/games" element={<GamesPage />} />
+        <Route path="/games" element={<GamesListPage />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/test" element={<TestPage />} />
         <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/game" element={<GamePage />} />
         {/* <Route path="/home" element={<PrivateRoute><HomePage /></PrivateRoute>} />
         <Route path="/profile" element={<PrivateRoute><ProfilePage /></PrivateRoute>} /> */}
       </Route>

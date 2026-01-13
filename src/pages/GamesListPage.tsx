@@ -1,7 +1,7 @@
 import Header from "@/components/layout/Header";
 import { Plus } from "lucide-react";
 
-const GamesPage = () => {
+const GamesListPage = () => {
   return (
     <div className="contenu">
       <Header
@@ -19,4 +19,4 @@ const GamesPage = () => {
   );
 };
 
-export default GamesPage;
+export default GamesListPage;
