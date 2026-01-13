@@ -1,17 +1,17 @@
-import { Card, CardContent } from "../ui/card";
-import type { ReactNode } from "react";
+import { Card, CardContent } from "../ui/card"
+import type { ReactNode } from "react"
 
 type Props = {
   number: number,
   title: string,
-  bgColor: string,
   children: ReactNode
 }
-const CardStatTest = ({ number, title, bgColor, children} : Props) => {
+
+const CardStatPlatformTest = ({ number, title, children} : Props) => {
   return (
-    <Card className="w-60">
+       <Card className="w-60">
       <CardContent className="flex items-center gap-3">
-        <div className={`p-2 rounded-xl ${bgColor}`}>
+        <div className={`p-2 rounded-xl`}>
           {children}
         </div>
         <div>
@@ -20,7 +20,7 @@ const CardStatTest = ({ number, title, bgColor, children} : Props) => {
         </div>
       </CardContent>
     </Card>
-  );
-};
+  )
+}
 
-export default CardStatTest;
+export default CardStatPlatformTest

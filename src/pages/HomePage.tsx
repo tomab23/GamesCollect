@@ -20,7 +20,13 @@ const HomePage = () => {
         Voir tout mes jeux
       </Button>
       <p>HomePage</p>
-      <p>LANGUE : {t("TEST")} </p>
+      <p>LANGUE : {t("TEST")} </p><br /><br /><br /><br />
+
+      <p>STATS GLOBALE</p><br /><br />
+      <p>STATS PLATFORM / PC - CONSOLE </p><br /><br />
+      <p>VOIR PLUS ? page stats avec graph ?</p><br /><br /><br /><br />
+
+      <p>LES DERNIERS JEUX AJOUTER</p>
 
     </div>
   );

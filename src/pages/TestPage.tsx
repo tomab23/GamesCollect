@@ -1,8 +1,10 @@
 import CardGamesDeux from "@/components/tests/CardGamesDeux";
 import CardGameUn from "@/components/tests/CardGameUn";
+import CardPlatformDeux from "@/components/tests/CardPlatformDeux";
+import CardStatPlatformTest from "@/components/tests/CardStatPlatformTest";
 import CardStatTest from "@/components/tests/CardStatTest";
 import { GamesMockTest } from "@/helpers/GameMockTest";
-import { PlusCircle, Star } from "lucide-react";
+import { Computer, Gamepad, PlusCircle, Star } from "lucide-react";
 
 const TestPage = () => {
   return (
@@ -13,9 +15,32 @@ const TestPage = () => {
           <Star className="text-primary" />
         </CardStatTest>
 
-        <CardStatTest number={4} title={"Add this year"} bgColor={"bg-cyan-500/15"}>
+        <CardStatTest
+          number={4}
+          title={"Add this year"}
+          bgColor={"bg-cyan-500/15"}
+        >
           <PlusCircle className="text-cyan-500" />
         </CardStatTest>
+      </div>
+      <br />
+      <br />
+      <p>Card stats platform</p>
+      <div className="flex gap-4 items-center">
+        {/* TEST 1 */}
+        <CardStatPlatformTest number={28} title={"Jeux sur Pc"}>
+          <Computer />
+        </CardStatPlatformTest>
+        <CardStatPlatformTest number={14} title={"Jeux sur Console"}>
+          <Gamepad />
+        </CardStatPlatformTest>
+        {/* TEST 2 */}
+        <CardPlatformDeux number={28} title={"Jeux sur Pc"}>
+          <Computer size={18} />
+        </CardPlatformDeux>
+        <CardPlatformDeux number={14} title={"Jeux sur Console"}>
+          <Gamepad size={18} />
+        </CardPlatformDeux>
       </div>
 
       <br />
