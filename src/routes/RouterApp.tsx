@@ -1,5 +1,6 @@
 import LayoutWithNavbar from "@/components/layout/LayoutWithNavbar";
 import AuthPage from "@/pages/auth/AuthPage";
+import GameFormPage from "@/pages/GameFormPage";
 import GamePage from "@/pages/GamePage";
 import GamesListPage from "@/pages/GamesListPage";
 import HomePage from "@/pages/HomePage";
@@ -28,6 +29,7 @@ const RouterApp = () => {
         <Route path="/test" element={<TestPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/game" element={<GamePage />} />
+        <Route path="/game-form" element={<GameFormPage />} />
         {/* <Route path="/home" element={<PrivateRoute><HomePage /></PrivateRoute>} />
         <Route path="/profile" element={<PrivateRoute><ProfilePage /></PrivateRoute>} /> */}
       </Route>

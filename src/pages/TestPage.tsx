@@ -1,10 +1,9 @@
 import CardGamesDeux from "@/components/tests/CardGamesDeux";
 import CardGameUn from "@/components/tests/CardGameUn";
-import CardPlatformDeux from "@/components/tests/CardPlatformDeux";
 import CardStatPlatformTest from "@/components/tests/CardStatPlatformTest";
 import CardStatTest from "@/components/tests/CardStatTest";
 import { GamesMockTest } from "@/helpers/GameMockTest";
-import { Computer, Gamepad, PlusCircle, Star } from "lucide-react";
+import { Computer, Gamepad2, PlusCircle, SquareLibrary, Star } from "lucide-react";
 
 const TestPage = () => {
   return (
@@ -22,6 +21,14 @@ const TestPage = () => {
         >
           <PlusCircle className="text-cyan-500" />
         </CardStatTest>
+
+                <CardStatTest
+          number={4}
+          title={"Collections"}
+          bgColor={"bg-blue-500/15"}
+        >
+          <SquareLibrary className="text-blue-500" />
+        </CardStatTest>
       </div>
       <br />
       <br />
@@ -32,15 +39,8 @@ const TestPage = () => {
           <Computer />
         </CardStatPlatformTest>
         <CardStatPlatformTest number={14} title={"Jeux sur Console"}>
-          <Gamepad />
+          <Gamepad2 />
         </CardStatPlatformTest>
-        {/* TEST 2 */}
-        <CardPlatformDeux number={28} title={"Jeux sur Pc"}>
-          <Computer size={18} />
-        </CardPlatformDeux>
-        <CardPlatformDeux number={14} title={"Jeux sur Console"}>
-          <Gamepad size={18} />
-        </CardPlatformDeux>
       </div>
 
       <br />

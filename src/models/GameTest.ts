@@ -7,6 +7,7 @@ export default class GameTest {
   platform: string;
   year: number;
   disc: boolean;
+  pc: boolean;
 
   constructor(
     id: number,
@@ -17,6 +18,7 @@ export default class GameTest {
     platform: string,
     year: number,
     disc: boolean,
+    pc: boolean,
   ) {
     this.id = id;
     this.title = title;
@@ -26,5 +28,6 @@ export default class GameTest {
     this.platform = platform;
     this.year = year;
     this.disc = disc;
+    this.pc = pc;
   }
 }

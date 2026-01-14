@@ -3,13 +3,14 @@ import type GameTest from "@/models/GameTest";
 export const GamesMockTest: GameTest[] = [
   {
     id: 1,
-    title: "The outer world 2 super jeu de fou furieux hjfsjdhq qsjdqdjqkld qjsdkqsdjl",
+    title: "The outer world 2 super jeu qdsqdjqdqsd",
     isFavor: false,
     note: "",
     isFinish: true,
     platform: "Xbox serie x",
     year: 2025,
     disc: true,
+    pc: false
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const GamesMockTest: GameTest[] = [
     platform: "Steam",
     year: 2025,
     disc: false,
+    pc: true
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ export const GamesMockTest: GameTest[] = [
     platform: "Xbox serie x",
     year: 2025,
     disc: false,
+    pc: false
   },
     {
     id: 4,
@@ -40,5 +43,6 @@ export const GamesMockTest: GameTest[] = [
     platform: "Xbox serie x",
     year: 2025,
     disc: false,
+    pc: false
   },
 ];

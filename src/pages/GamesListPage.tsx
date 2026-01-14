@@ -6,7 +6,7 @@ const GamesListPage = () => {
     <div className="contenu">
       <Header
         isButton={true}
-        page={"/gameForm"}
+        page={"/game-form"}
         nameButton={"Add new game"}
         icon={<Plus />}
         title={"My Games"}

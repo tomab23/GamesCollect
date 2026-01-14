@@ -12,7 +12,7 @@ const HomePage = () => {
       <Header
         title={80 + " Jeux"}
         isButton={true}
-        page={"/gameForm"}
+        page={"/game-form"}
         nameButton={"Add new game"}
         icon={<Plus />}
       />
