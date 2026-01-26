@@ -2,8 +2,16 @@ import CardGamesDeux from "@/components/tests/CardGamesDeux";
 import CardGameUn from "@/components/tests/CardGameUn";
 import CardStatPlatformTest from "@/components/tests/CardStatPlatformTest";
 import CardStatTest from "@/components/tests/CardStatTest";
+import CardTrophyDeuxTest from "@/components/tests/CardTrophyDeuxTest";
+import CardTrophyTest from "@/components/tests/CardTrophyTest";
 import { GamesMockTest } from "@/helpers/GameMockTest";
-import { Computer, Gamepad2, PlusCircle, SquareLibrary, Star } from "lucide-react";
+import {
+  Computer,
+  Gamepad2,
+  PlusCircle,
+  SquareLibrary,
+  Star,
+} from "lucide-react";
 
 const TestPage = () => {
   return (
@@ -22,7 +30,7 @@ const TestPage = () => {
           <PlusCircle className="text-cyan-500" />
         </CardStatTest>
 
-                <CardStatTest
+        <CardStatTest
           number={4}
           title={"Collections"}
           bgColor={"bg-blue-500/15"}
@@ -30,7 +38,6 @@ const TestPage = () => {
           <SquareLibrary className="text-blue-500" />
         </CardStatTest>
       </div>
-      <br />
       <br />
       <p>Card stats platform</p>
       <div className="flex gap-4 items-center">
@@ -42,9 +49,6 @@ const TestPage = () => {
           <Gamepad2 />
         </CardStatPlatformTest>
       </div>
-
-      <br />
-      <br />
       <br />
       <div>
         <p>
@@ -68,6 +72,17 @@ const TestPage = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* TROPHY */}
+      <p className="mt-5 mb-2">Card trophy nombre de jeux test 1 & 2</p>
+      <div className="mb-5 flex gap-5">
+        <CardTrophyTest finish={false} />
+        <CardTrophyTest finish={true} />
+      </div>
+      <div className="mb-10 flex gap-5">
+        <CardTrophyDeuxTest finish={false} />
+        <CardTrophyDeuxTest finish={true} />
       </div>
     </div>
   );
