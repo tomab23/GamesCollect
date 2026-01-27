@@ -16,16 +16,26 @@ const GameFormPage = () => {
     <div className="row-start-2 bg-blue-800">PC ?</div>
     <div className="col-span-2 row-start-2 bg-red-800">Platform</div>
     <div className="col-start-4 row-start-2 bg-green-700">Année de sortie</div>
-    <div className="col-span-4 row-start-3 bg-red-800">Notes</div>
+    <div className="col-span-4 row-start-3 bg-yellow-800">checkbox Add todo list</div>
+    <div className="col-span-4 row-start-4 bg-red-800">Notes</div>
 </div>
-<br /><br /><br />
+<br />
 <div className="grid grid-cols-4 grid-rows-5 gap-4">
     <div className="col-span-2 bg-blue-800">Nom du jeu</div>
     <div className="col-span-2 col-start-3 bg-red-800">CD ? | Finish ? | favorite ?</div>
     <div className="row-start-2 bg-blue-800">PC ?</div>
     <div className="col-span-2 row-start-2 bg-red-800">Platform</div>
     <div className="col-start-4 row-start-2 bg-green-700">Année de sortie</div>
-    <div className="col-span-4 row-start-3 bg-red-800">Notes</div>
+    <div className="col-span-4 row-start-3 bg-yellow-800">checkbox Add todo list</div>
+    <div className="col-span-4 row-start-4 bg-red-800">Notes</div>
+</div>
+{/* NOTES... */}
+<div className="mb-10">
+    <p>Ajouter un nombre de fois où le jeu est fini, nombre modifiable, et ajouter des l'ajout d'un jeu 
+        la possibilité de mettre le jeu dans sa todo list
+    </p>
+    <p>Ajouter le nombre de fois fini à coté de finish ? </p>
+    <p>Ajouter une checkbox pour ajouter directement a la todo list</p>
 </div>
  {/* BUTTONS */}
 <div className="flex items-center justify-between">
