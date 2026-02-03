@@ -7,7 +7,8 @@ type Props = {
 };
 
 const CardTrophyDeuxTest = ({ finish }: Props) => {
-  const result = finish ? 100 : (157 / 451) * 100;
+  const games = 157;
+  const result = finish ? 100 : (games / 451) * 100;
 
   return (
     <Card
@@ -31,7 +32,7 @@ const CardTrophyDeuxTest = ({ finish }: Props) => {
           <p className="text-xl font-semibold it">Il ne manque pas un zéro ?</p>
 
           {/* <p className="text-muted-foreground">100 Jeux</p> */}
-          <Progress value={result} className="w-full">
+          <Progress value={games <= 451 ? result : 100} className="w-full">
             <ProgressLabel className={"text-sm"}>451</ProgressLabel>
             <ProgressValue />
           </Progress>
