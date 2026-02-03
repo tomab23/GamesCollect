@@ -7,7 +7,7 @@ type Props = {
 };
 
 const CardTrophyDeuxTest = ({ finish }: Props) => {
-  const result: number = finish ? 100 : 50;
+  const result = finish ? 100 : (157 / 451) * 100;
 
   return (
     <Card
@@ -28,11 +28,11 @@ const CardTrophyDeuxTest = ({ finish }: Props) => {
           {/* <CheckCircle size={40} className={`${finish && "text-black"}`} /> */}
         </div>
         <div className="flex flex-col justify-center w-full">
-          <p className="text-2xl font-semibold">C'est beaucoup là non ?</p>
+          <p className="text-xl font-semibold it">Il ne manque pas un zéro ?</p>
 
           {/* <p className="text-muted-foreground">100 Jeux</p> */}
           <Progress value={result} className="w-full">
-            <ProgressLabel className={"text-sm"}>100</ProgressLabel>
+            <ProgressLabel className={"text-sm"}>451</ProgressLabel>
             <ProgressValue />
           </Progress>
           {/* <p className="text-muted-foreground">33 / 100</p> */}
