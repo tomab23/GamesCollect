@@ -6,7 +6,7 @@ type Props = {
   finish: boolean;
 };
 const CardTrophyTest = ({ finish }: Props) => {
-  const result: number = finish ? 100 : 50;
+  const result = finish ? 100 : (157 / 451) * 100;
 
   return (
     <Card
@@ -26,7 +26,7 @@ const CardTrophyTest = ({ finish }: Props) => {
 
           <Progress value={result} className="w-full ">
             <ProgressLabel className={"text-lg font-semibold"}>
-              100 - <i>C'est beaucoup là non ?</i>
+              451 - <i>Il ne manque pas un zéro ?</i>
             </ProgressLabel>
             <ProgressValue />
           </Progress>

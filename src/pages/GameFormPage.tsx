@@ -11,7 +11,7 @@ const GameFormPage = () => {
         {/* FORM */}
 <div className="grid grid-cols-4 grid-rows-5 gap-4">
     <div className="col-span-2 bg-blue-800">Nom du jeu</div>
-    <div className="col-start-3 bg-red-800">CD ? | Finish ?</div>
+    <div className="col-start-3 bg-red-800">CD ? | Finish ? | heures joués</div>
     <div className="col-start-4 bg-green-700">Favoris ?</div>
     <div className="row-start-2 bg-blue-800">PC ?</div>
     <div className="col-span-2 row-start-2 bg-red-800">Platform</div>
@@ -22,7 +22,7 @@ const GameFormPage = () => {
 <br />
 <div className="grid grid-cols-4 grid-rows-5 gap-4">
     <div className="col-span-2 bg-blue-800">Nom du jeu</div>
-    <div className="col-span-2 col-start-3 bg-red-800">CD ? | Finish ? | favorite ?</div>
+    <div className="col-span-2 col-start-3 bg-red-800">CD ? | Finish ? | heures joués | favorite ?</div>
     <div className="row-start-2 bg-blue-800">PC ?</div>
     <div className="col-span-2 row-start-2 bg-red-800">Platform</div>
     <div className="col-start-4 row-start-2 bg-green-700">Année de sortie</div>
